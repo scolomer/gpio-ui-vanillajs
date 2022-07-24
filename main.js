@@ -3,7 +3,7 @@ import "onsenui/css/onsenui.css"
 import ons from "onsenui/js/onsenui.js"
 import "onsenui/css/dark-onsen-css-components.min.css"
 
-const url = import.meta.env.VITE_WS != undefined ? import.meta.env.VITE_WS : 'ws://gpio-ui.herokuapp.com/ws/ui'
+const url = import.meta.env.VITE_WS != undefined ? import.meta.env.VITE_WS : 'wss://gpio-ui.herokuapp.com/ws/ui'
 
 let ws = {
 
