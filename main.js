@@ -90,12 +90,14 @@ ws.onError = () => {
 }
 
 ws.onConnected = () => {
+  document.getElementById("cstate").setAttribute("style", "color: white")
   document.querySelectorAll("ons-switch").forEach(sw => {
     sw.disabled = false
   });
 }
 
 ws.onDisconnected = () => {
+  document.getElementById("cstate").setAttribute("style", "color: red")
   document.querySelectorAll("ons-switch").forEach(sw => {
     sw.disabled = true
   });
